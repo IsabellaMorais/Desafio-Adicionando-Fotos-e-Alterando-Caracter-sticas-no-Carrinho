@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mamedi's Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagens/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header com Logo -->
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo do Projeto">
+        </div>
+        <!-- Menu Dropdown -->
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="servicos.html">Sobre</a></li>
+                <li><a href="sobre.html">Contatos</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção do carrinho -->
+        <section class="carrinho">
+            <!-- Tabela de produtos no carrinho -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Imagem</th>
+                        <th>Características</th>
+                        <th>Quantidade</th>
+                        <th>Preço Unitário</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Produto 1 -->
+                    <tr>
+                        <td>Vestido floral Azul</td>
+                        <td>
+                            <img src="imagens/vestido.png" alt="vestido" class="produto-img">
+                        </td>
+                        <td>
+                            <p>Tamanho: M</p>
+                            <p>Cor: Azul</p>
+                        </td>
+                        <td>
+                            <input type="number" value="1" min="1" class="quantidade">
+                        </td>
+                        <td class="preco-unitario">R$ 120,00</td>
+                        <td class="preco-total">R$ 120,00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                    <!-- Produto 2 -->
+                    <tr>
+                        <td>Aidas Campus 00's</td>
+                        <td>
+                            <img src="imagens/adidas.png" alt="Produto Exemplo 2" class="produto-img">
+                        </td>
+                        <td>
+                            <p>Tamanho: G</p>
+                            <p>Cor: Preto</p>
+                        </td>
+                        <td>
+                            <input type="number" value="2" min="1" class="quantidade">
+                        </td>
+                        <td class="preco-unitario">R$ 700,00</td>
+                        <td class="preco-total">R$ 700,00</td>
+                        <td>
+                            <button class="remover-produto">Remover</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Exibição do total final -->
+            <div class="total-final">
+                <h3>Total Final: <span id="total-final">R$ 820,00</span></h3>
+            </div>
+        </section>
+    </main>
+
+    <!-- Script para interatividade -->
+    <script src="carrinho.js"></script>
+</body>
+</html>
